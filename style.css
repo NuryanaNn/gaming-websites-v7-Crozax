@@ -1,0 +1,958 @@
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@400;500;600;700&family=Ubuntu:wght@300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Teko', sans-serif;
+}
+
+header .navbar{
+    display: flex;
+    align-items: center;
+    padding: .5rem 4%;
+    justify-content: space-between;
+}
+
+header .navbar .logo img{
+    width: 100px;
+    height: 100px;
+}
+
+header .navbar ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+header .navbar li{
+    margin-right: 30px;
+}
+
+header .navbar a{
+    color: black;
+    text-decoration: none;
+    font-size: 25px;
+}
+
+header .inputBx{
+    position: relative;
+}
+
+header .inputBx i{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+header .icons{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+header .navbar input{
+    padding: 10px 20px;
+    border: 1px solid blue;
+    border-radius: 10px;
+    outline: none;
+}
+
+.navbar .bars{
+    width: 40px;
+    height: 5px;
+    background-color: #001635;
+    margin-bottom: 6px;
+}
+
+.navbar .burger{
+    display: none;
+}
+
+/* Hero */
+.hero .card{
+    width: 100%;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    padding: 0 4%;
+}
+
+.hero .card h1{
+    font-size: 150px;
+    font-weight: 800;
+    font-family: 'Teko', sans-serif;
+    line-height: 110px;
+}
+
+.hero .card h3{
+    font-size: 50px;
+}
+
+.hero .card button,
+.promote .card .cardText button,
+.bestContent .card button,
+.categoryContents .card button{
+    padding: 15px 25px;
+    margin-top: 15px;
+    background-color: #006afc;
+    border: none;
+    border-radius: 30px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.hero .card1{
+    background-image: url('slider1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+}
+
+.hero .card2{
+    background-image: url('slider2.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    color: #fff;
+}
+
+/* Top Category */
+.topCategory,
+.product,
+.best,
+.categorized,
+.news,
+.testimonials{
+    margin-top: 30px;
+    padding: 2rem 4%;
+}
+
+.topCategory .title,
+.product .title,
+.collection .title,
+.best .title,
+.categorized .title,
+.news .title,
+.testimonials .title{
+    text-align: center;
+}
+
+.topCategory .title h4,
+.product .title h4,
+.collection .title h4,
+.best .title h4,
+.categorized .title h4,
+.news .title h4,
+.testimonials .title h4{
+    font-size: 35px;
+    color: #006afc;
+    font-weight: lighter;
+}
+
+.topCategory .title h1,
+.product .title h1,
+.collection .title h1,
+.best .title h1,
+.categorized .title h1,
+.news .title h1,
+.testimonials .title h1{
+    font-size: 45px;
+}
+
+.categoryContent{
+    margin-top: 40px;
+}
+
+.categoryContent .card{
+    border: 1px solid #006afc;
+    width: 280px;
+    height: 380px;
+    cursor: pointer;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.categoryContent .card img{
+    width: 100%;
+    height: 100%;
+}
+
+.categoryContent .card .labels{
+    z-index: 10;
+    position: absolute;
+    bottom: 10px;
+    color: #fff;
+    background-color: black;
+    padding: 15px 25px;
+    transform: skewX(-10deg);
+    transition: .5s;
+}
+
+.categoryContent .card .labels:hover{
+    background-color: #006afc;
+    transition: .5s;
+}
+
+
+/* Product */
+.product .categoryProduct ul{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.product .categoryProduct ul li{
+    margin-right: 20px;
+}
+
+.product .categoryProduct ul li button{
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #006afc;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.product .categoryProduct ul li:nth-child(1) button{
+    background-color: #006afc;
+    color: #fff;
+}
+
+.product .categoryProduct ul li:nth-child(1) button:hover{
+    background-color: transparent;
+    color: #000;
+}
+
+.product .categoryProduct ul li button:hover{
+    background-color: #006afc;
+    transition: .5s;
+}
+
+.product .productContent{
+    margin-top: 40px;
+    display: flex;
+}
+
+.product .productContent .sideImg{
+    margin-right: 15px;
+    width: 680px;
+    overflow: hidden;
+}
+
+.product .productContent .sideImg img{
+    width: 100%;
+}
+
+.product .productContent .sideImg:hover img{
+    transform: scale(1.1);
+    transition: .5s;
+}
+
+.product .productContent .card{
+    width: 260px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.product .productContent .card .images{
+    width: 100%;
+    border: 1px solid #006afc;
+}
+
+.product .productContent .card .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.product .productContent .card .cardText i{
+    color: gold;
+}
+
+.product .productContent .card h3{
+    font-size: 35px;
+}
+
+.product .productContent .card h4{
+    color: #006afc;
+    font-size: 30px;
+}
+
+.product .productContent .card .textGame{
+    position: absolute;
+    top: 10px;
+    transition: .5s;
+    left:-60px ;
+}
+
+.product .productContent .card .cardText{
+    margin-top: 10px;
+}
+
+.product .productContent .card:hover .textGame{
+    left: 10px;
+    transition: .5s;
+}
+
+.product .productContent .card .textGame h5{
+    color: #fff;
+    background-color: purple;
+    margin-bottom: 7px;
+    padding: 3px 6px;
+    font-weight: lighter;
+    border-radius: 3px;
+}
+
+.product .productContent .card .icnBx{
+    position: absolute;
+    top: 50px;
+}
+
+.product .productContent .card .icnBx ul{
+    display: flex;
+    list-style: none;
+    margin-top: 100px;
+}
+
+.product .productContent .card .icnBx ul li{
+    margin-right: 15px;
+    background-color: #fff;
+    padding: 10px;
+    box-shadow: 3px 3px 13px 0px rgba(0,0,0,0.75);
+    border-radius: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+}
+
+
+.product .productContent .card:hover .icnBx ul li{
+    opacity: 100%;
+    transform: translateY(20px);
+    transition: .5s;
+}
+
+.product .productContent .cardWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 10px;
+}
+
+/* Games */
+.games{
+    background-image: url(gamess.jpg);
+    padding: 4rem 4%;
+    height: 500px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.games .gamesText h3{
+    font-size: 40px;
+    font-weight: lighter;
+    text-shadow: 1px 1px #000;
+}
+
+.games .gamesText h1{
+    font-size: 90px;
+    text-shadow: 1px 1px #000;
+}
+
+.games .gamesText p{
+    font-size: 30px;
+    text-shadow: 1px 1px #000;
+}
+
+.games .gamesText i{
+    padding: 30px;
+    border-radius: 50%;
+    background-color: #006afc;
+    margin-top: 30px;
+}
+
+/* promote */
+.promote{
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.promote .card{
+    width: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 30px;
+    border: 1px solid #006afc;
+}
+
+.promote .images,
+.promote img{
+    width: 100%;
+    height: 100%;
+}
+
+.promote .card .cardText{
+    position: absolute;
+    padding: 30px;
+    color: #fff;
+}
+
+.promote .card .cardText h3{
+    font-size: 30px;
+}
+
+.promote .card .cardText h1{
+    font-size: 50px;
+}
+
+.promote .card .cardText p{
+    font-size: 25px;
+}
+
+.promote .card .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, .2);
+    top: 0;
+    left: -600px;
+    transition: .5s;
+}
+
+.promote .card:hover .overlay{
+    left: 0;
+    transition: .5s;
+}
+
+/* Collection */
+.collection{
+    padding: 4rem 4%;
+}
+
+.collectionContent{
+    margin-top: 60px;
+}
+
+.collectionContent .card{
+    width: 350px;
+    display: flex;
+    border: 1px solid #006afc;
+    padding: 10px 20px;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.collectionContent .card .images{
+    margin-right: 35px;
+    width: 150px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.collectionContent .card .images img{
+    width: 100%;
+}
+
+.collectionContent .card h3{
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.collectionContent .card ul li{
+    margin-top: 5px;
+}
+
+/* Best Content */
+.bestContent{
+    display: flex;
+    margin-top: 40px;
+}
+
+.bestContent .sideImg{
+    margin-right: 20px;
+    cursor: pointer;
+}
+
+.bestContent .card{
+    width: 260px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.bestContent .card .images,
+.bestContent .card img{
+    width: 100%;
+}
+
+.bestContent .card .cardText{
+    padding-top: 10px;
+    color: gold;
+}
+
+.bestContent .card h3{
+    margin: 5px 0;
+}
+
+.bestContent .card h4{
+    color: #006afc;
+}
+
+/* Category */
+.categorized .category ul{
+    display: flex;
+    list-style: none;
+    margin-top: 40px;
+    justify-content: center;
+}
+
+.categorized .category ul li{
+    margin-right: 20px;
+}
+
+.categorized .category ul li button{
+    padding: 10px 20px;
+    border: none;
+    border-bottom: 1px solid #006afc;
+    background-color: transparent;
+    cursor: pointer;
+    transition: .5s;
+}
+
+.categorized .category ul li button:hover{
+    background-color: #006afc;
+    color: #fff;
+    transition: .5s;
+}
+
+.categorized .category ul li:nth-child(1) button{
+    background-color: #006afc;
+    color: #fff;
+}
+
+.categorized .category ul li:nth-child(1) button:hover{
+    background-color: transparent;
+    color: #000;
+    transition: .5s;
+}
+
+/* Categories */
+.categoryContents{
+    margin-top: 40px;
+}
+
+.categoryContents .card{
+    width: 300px;
+    text-align: center;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+}
+
+.categoryContents .card .images{
+    border: 1px solid #006afc;
+    height: 400px;
+    overflow: hidden;
+    border-radius: 30px;
+}
+
+.categoryContents .card .images img{
+    width: 100%;
+    height: 100%;
+}
+
+.categoryContents .card .cardText{
+    margin-top: 20px;
+}
+
+.categoryContents .card h3{
+    margin: 10px;
+}
+
+/* Feature */
+.feature{
+    padding: 4rem 4%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.feature .card{
+    display: flex;
+    align-items: center;
+    background-color: #001635;
+    width: 350px;
+    padding: 20px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.feature .card .icns{
+    margin-right: 20px;
+}
+
+.feature .card .icns i{
+    font-size: 30px;
+}
+
+.feature .card h1{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+/* News */
+.newsContent{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.newsContent .card{
+    width: 300px;
+    border: 1px solid #006afc;
+    border-radius: 20px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.newsContent .card ul{
+    display:flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.newsContent .card ul i{
+    color: gray;
+    margin-right: 10px;
+}
+
+.newsContent .card .images{
+    position: relative;
+}
+
+.newsContent .card .images,
+.newsContent .card img{
+    width: 100%;
+}
+
+.newsContent .card .images .date{
+    background-color: #fff;
+    padding: 15px 25px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-bottom-right-radius: 30px;
+    z-index: 10;
+}
+
+.newsContent .card .images .overlay{
+    position: absolute;
+    top:-350px;
+    left: 0;
+    background-color: rgba(0, 0, 0, .4);
+    width: 100%;
+    height: 97%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    transition: .5s;
+}
+
+.newsContent .card .images .overlay i{
+    font-size: 25px;
+}
+
+.newsContent .card:hover .images .overlay{
+    top: 0;
+}
+
+.newsContent .card:hover .images .date{
+    background-color: #006afc;
+    color: #fff;
+}
+
+.newsContent .card .cardText{
+    padding: 15px;
+}
+
+.newsContent .card .cardText p{
+    margin-top: 10px;
+}
+
+/* Sponsored */
+.sponsores{
+    background-color: #001635;
+    padding: 4rem 4%;
+    margin-top: 30px;
+}
+
+.sponsores .card{
+    width: 250px;
+}
+
+/* Testimonials */
+.testimonialsContent{
+    background-image: url(bgTesti.jpg);
+    padding: 2rem 4%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    border-radius: 30px;
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.testimonialsContent .card{
+    color: #fff;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.testimonialsContent .card ul{
+    display: flex;
+    align-items: center;
+    list-style: none;
+    justify-content: center;
+    margin: 15px 0;
+}
+
+.testimonialsContent .card img{
+    border-radius: 15px;
+}
+
+.testimonialsContent .card .cardText{
+    max-width: 600px;
+}
+
+.testimonialsContent .card ul li{
+    margin-right: 20px;
+}
+
+.testimonialsContent .card .ratting{
+    margin-bottom: 15px;
+}
+
+.testimonialsContent .card .ratting i{
+    color: gold;
+}
+
+/* Footer */
+footer{
+    padding: 4rem 4%;
+    background-image: url('footerBg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 106, 252, .3);
+    width: 100%;
+    height: 100%;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.footer{
+    width: 300px;
+    position: relative;
+    z-index: 10;
+}
+
+.footer li{
+    display: flex;
+    align-items: center;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.footer li i{
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+footer a{
+    text-decoration: none;
+    color: #fff;
+}
+
+footer p{
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+footer input{
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    outline: none;
+}
+
+footer button{
+    padding: 10px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+}
+
+@media (max-width:980px) {
+    .navbar .burger{
+        display: block;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .hero .card{
+        background-position: center;
+    }
+    
+    .hero .card h1{
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Teko', sans-serif;
+        line-height: 60px;
+    }
+
+    .hero .card h3{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .productContent{
+        flex-wrap: wrap-reverse;
+        row-gap: 30px;
+    }
+
+    .product .productContent .card{
+        width: 350px;
+    }
+
+    .games .gamesText h1{
+        font-size: 30px;
+    }
+    
+    .games .gamesText p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .promote{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .bestContent .sideImg{
+        display: none;
+    }
+    
+    .category{
+        display: none;
+    }
+
+    .feature{
+        flex-wrap: wrap;
+    }
+}
+
+
+
+
+
+
+@media (max-width:480px) {
+    .navbar .burger{
+        display: block;
+    }
+
+    .navigation{
+        display: none;
+    }
+
+    .hero .card{
+        background-position: center;
+    }
+    
+    .hero .card h1{
+        font-size: 50px;
+        font-weight: 800;
+        font-family: 'Teko', sans-serif;
+        line-height: 60px;
+    }
+
+    .hero .card h3{
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    .productContent{
+        flex-wrap: wrap-reverse;
+        row-gap: 30px;
+    }
+
+    .product .productContent .card{
+        width: 350px;
+    }
+
+    .games .gamesText h1{
+        font-size: 30px;
+    }
+    
+    .games .gamesText p{
+        margin-top: 20px;
+        font-size: 20px;
+    }
+
+    .promote{
+        flex-wrap: wrap;
+        row-gap: 40px;
+    }
+
+    .bestContent .sideImg{
+        display: none;
+    }
+    
+    .category{
+        display: none;
+    }
+
+    .feature{
+        flex-wrap: wrap;
+    }
+}
